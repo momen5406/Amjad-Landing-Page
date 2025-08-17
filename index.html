@@ -4,45 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>أمجاد – منصة للتراث العربي</title>
+    <!-- Phosphor Icons CDN -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
+    <!-- Main CSS File -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- =========================
+         Navigation Bar
+    ========================== -->
     <nav class="absolute w-full top-0 z-40 text-white">
       <div class="container mx-auto p-5 flex items-center justify-between">
+        <!-- Logo/Brand -->
         <h1 class="font-heading text-4xl">أمجاد</h1>
+        <!-- Mobile Menu Buttons -->
         <i
           id="menuBtn"
           class="ph ph-list sm:hidden text-5xl cursor-pointer"
         ></i>
         <i id="exitBtn" class="ph ph-x hidden text-5xl cursor-pointer z-50"></i>
+        <!-- Navigation Links -->
         <ul
           id="menu"
           class="flex items-center sm:justify-end sm:flex-row gap-5 sm:relative absolute top-0 start-0 w-full sm:h-fit h-screen sm:bg-transparent bg-beige flex-col justify-center sm:text-base sm:font-medium font-semibold text-4xl sm:translate-0 -translate-y-full transition-all duration-600"
         >
-          <li>
-            <a href="#about">من نحن</a>
-          </li>
-          <li>
-            <a href="#services">ماذا نقدم</a>
-          </li>
-          <li>
-            <a href="#gallery">معرض الأعمال</a>
-          </li>
-          <li>
-            <a href="#join">انضم لنا</a>
-          </li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">ماذا نقدم</a></li>
+          <li><a href="#gallery">معرض الأعمال</a></li>
+          <li><a href="#join">انضم لنا</a></li>
         </ul>
       </div>
     </nav>
 
+    <!-- =========================
+         Hero Section
+    ========================== -->
     <header
       class="h-screen bg-[url(../img/hero.jpg)] bg-cover bg-center relative flex items-center justify-center text-center text-white"
     >
+      <!-- Overlay for readability -->
       <div class="absolute top-0 start-0 h-full w-full bg-black/80"></div>
       <div class="container mx-auto px-5 relative">
         <h2 class="font-heading sm:text-8xl text-7xl">
@@ -54,14 +58,19 @@
         <a
           href="#gallery"
           class="inline-block bg-beige hover:bg-gold transition-colors duration-300 py-3 px-9 rounded-xl text-black font-semibold shadow-xl"
-          >استكشف التراث</a
         >
+          استكشف التراث
+        </a>
       </div>
     </header>
 
+    <!-- =========================
+         About Section
+    ========================== -->
     <section id="about" class="py-[100px] even:bg-soft-beige">
       <div class="container mx-auto px-5">
         <div class="grid md:grid-cols-2 gap-5 items-center">
+          <!-- About Text -->
           <div class="md:text-right text-center">
             <h3 class="text-5xl font-heading mb-5">من نحن</h3>
             <p class="text-xl leading-relaxed">
@@ -76,6 +85,7 @@
               بأسلوب يجمع بين الأصالة والابتكار.
             </p>
           </div>
+          <!-- About Image -->
           <div>
             <img class="w-full rounded-2xl" src="img/about.jpg" alt="About" />
           </div>
@@ -83,22 +93,28 @@
       </div>
     </section>
 
+    <!-- =========================
+         Services Section
+    ========================== -->
     <section id="services" class="py-[100px] even:bg-soft-beige">
       <div class="container mx-auto px-5">
         <h3 class="text-5xl font-heading mb-5 text-center">ماذا نقدم</h3>
         <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-5 mt-[50px]">
+          <!-- Service 1 -->
           <div
             class="bg-white text-center p-5 rounded-2xl shadow-xl hover:shadow-none transition-all duration-300"
           >
             <i class="ph ph-scroll text-3xl text-gold"></i>
             <h5 class="text-xl font-semibold mt-2">مكتبة رقمية للمخطوطات</h5>
           </div>
+          <!-- Service 2 -->
           <div
             class="bg-white text-center p-5 rounded-2xl shadow-xl hover:shadow-none transition-all duration-300"
           >
             <i class="ph ph-pencil text-3xl text-gold"></i>
             <h5 class="text-xl font-semibold mt-2">دروس في فنون الخط العربي</h5>
           </div>
+          <!-- Service 3 -->
           <div
             class="bg-white text-center p-5 rounded-2xl shadow-xl hover:shadow-none transition-all duration-300"
           >
@@ -107,6 +123,7 @@
               معرض للفنون والقطع التراثية
             </h5>
           </div>
+          <!-- Service 4 -->
           <div
             class="bg-white text-center p-5 rounded-2xl shadow-xl hover:shadow-none transition-all duration-300"
           >
@@ -119,10 +136,14 @@
       </div>
     </section>
 
+    <!-- =========================
+         Gallery Section
+    ========================== -->
     <section id="gallery" class="py-[100px] even:bg-soft-beige">
       <div class="container mx-auto px-5">
         <h3 class="text-5xl font-heading mb-5 text-center">معرض أعمالنا</h3>
         <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-5 mt-[50px]">
+          <!-- Gallery Images -->
           <div class="rounded-2xl overflow-hidden group shadow-xl">
             <img
               class="w-full group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
@@ -169,6 +190,9 @@
       </div>
     </section>
 
+    <!-- =========================
+         Join/Newsletter Section
+    ========================== -->
     <section id="join" class="py-[100px] even:bg-soft-beige">
       <div class="container mx-auto px-5">
         <h3 class="text-5xl font-heading mb-5 text-center">
@@ -177,6 +201,7 @@
         <p class="text-center text-xl">
           اشترك ليصلك كل جديد من التراث والفنون.
         </p>
+        <!-- Newsletter Form -->
         <form class="flex items-center justify-center md:w-1/2 mx-auto mt-10">
           <input
             class="bg-white w-full px-6 py-3 rounded-s-2xl outline-none shadow"
@@ -194,6 +219,9 @@
       </div>
     </section>
 
+    <!-- =========================
+         Footer
+    ========================== -->
     <footer class="bg-gold text-center">
       <div class="container mx-auto px-5">
         <p class="py-5 text-xl">جميع الحقوق محفوظه. أمجاد &copy; 2025.</p>
@@ -201,6 +229,7 @@
           class="flex md:flex-row flex-col items-center justify-center gap-2 border-t border-white py-5 md:text-left text-center"
         >
           <p>صُنع بـ ❤️ بواسطة مؤمن حسين.</p>
+          <!-- Social Links -->
           <ul class="flex items-center gap-2">
             <!-- GitHub Link -->
             <li
@@ -211,6 +240,7 @@
                 target="_blank"
                 title="github"
               >
+                <!-- GitHub SVG Icon -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -234,6 +264,7 @@
                 target="_blank"
                 title="linkedin"
               >
+                <!-- LinkedIn SVG Icon -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -253,6 +284,9 @@
       </div>
     </footer>
 
+    <!-- =========================
+         Main JavaScript File
+    ========================== -->
     <script src="js/main.js"></script>
   </body>
 </html>
