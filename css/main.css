@@ -726,6 +726,11 @@
       text-align: left;
     }
   }
+  .md\:text-right {
+    @media (width >= 45rem) {
+      text-align: right;
+    }
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
